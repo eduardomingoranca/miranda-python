@@ -1,1 +1,4 @@
-print(1 + 1)
+# Permite escrever um comentario
+print(123) # Na frente
+# Abaixo
+print(123)
