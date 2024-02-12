@@ -32,7 +32,7 @@ lista.append('Louis')
 nome = lista.pop()
 lista.append(1233)
 del lista[-1]
-# lista.clear()
+lista.clear()
 lista.insert(0, 5)
 #print(lista)
 
@@ -40,9 +40,9 @@ lista.insert(0, 5)
 #del lista[2]
 #print(lista)
 #print(lista[2])    
-#lista.append(50)
-#lista.pop()
-#lista.append(60)
+lista.append(50)
+lista.pop()
+lista.append(60)
 #ultimo_valor = lista.pop(3)
 #print(lista, 'Removido,', ultimo_valor)
 
@@ -53,4 +53,24 @@ lista_a = [1, 2, 3]
 lista_b = [4, 5, 6]
 lista_c = lista_a + lista_b
 lista_a.extend(lista_b)
+#print(lista_a)
+
+
+"""
+Cuidados com dados mutaveis
+= - copiado o valor (imutaveis)
+= - aponta para o mesmo valor na memoria (mutavel)
+"""
+nome = 'Louis'
+noutra_variavel = nome
+nome = 'John'
+#print(nome)
+#print(noutra_variavel)
+
+lista_a = ['Louis', 'Mary', 1, True, 1.2]
+#lista_b = lista_a
+lista_b = lista_a.copy()
+
+lista_a[0] = 'Qualquer coisa'
 print(lista_a)
+print(lista_b)
