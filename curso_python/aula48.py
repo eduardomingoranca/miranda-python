@@ -34,7 +34,7 @@ lista.append(1233)
 del lista[-1]
 # lista.clear()
 lista.insert(0, 5)
-print(lista)
+#print(lista)
 
 #lista[2] = 300
 #del lista[2]
@@ -48,3 +48,9 @@ print(lista)
 
 #numero = lista[2]
 #print(numero)
+
+lista_a = [1, 2, 3]
+lista_b = [4, 5, 6]
+lista_c = lista_a + lista_b
+lista_a.extend(lista_b)
+print(lista_a)
