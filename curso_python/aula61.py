@@ -23,3 +23,16 @@ contrario disso:
 
 O primeiro digito do CPF eh 7        
 """
+cpf = '74682489070'
+nove_digitos = cpf[:9]
+contador_regressivo = 10
+soma_digitos = 0
+
+for digito in nove_digitos:
+    soma_digitos = soma_digitos + (int(digito) *  contador_regressivo)
+    contador_regressivo = contador_regressivo - 1
+
+mod = soma_digitos * 10 % 11
+
+validacao_cpf = 'CPF valido!' if mod == int(cpf[:1]) else 'CPF invalido!'
+print(validacao_cpf)
