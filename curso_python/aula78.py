@@ -28,11 +28,19 @@ s1 = {1, 2, 3}
 #a = b = 1
 #print(s1, a, b)
 #print(3 not in s1)
-for numero in s1:
-    print(numero)
+#for numero in s1:
+#    print(numero)
 
 # Metodos uteis:
 # add, update, clear, discard
+s1 = set()
+s1.add('Louis')
+s1.add(1)
+s1.update(('Ola mundo', 1, 2, 3, 4))
+#s1.clear()    
+s1.discard('Ola mundo')
+s1.discard('Louis')
+print(s1)
 
 # Operadores uteis:
 # uniao | uniao (union) - Une
