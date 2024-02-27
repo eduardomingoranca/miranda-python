@@ -40,10 +40,17 @@ s1.update(('Ola mundo', 1, 2, 3, 4))
 #s1.clear()    
 s1.discard('Ola mundo')
 s1.discard('Louis')
-print(s1)
+#print(s1)
 
 # Operadores uteis:
 # uniao | uniao (union) - Une
 # interseccao & (intersection) - Itens presentes em ambos
 # diferenca - Itens presentes apenas no set da esquerda
 # diferenca simetrica ^ - Itens que nao estao em ambos
+s1 = {1, 2, 3}
+s2 = {2, 3, 4}
+s3 = s1 | s2 # union
+s3 = s1 & s2 # intersection
+s3 = s2 - s1 # difference
+s3 = s2 ^ s1 # simetric difference
+print(s3)
