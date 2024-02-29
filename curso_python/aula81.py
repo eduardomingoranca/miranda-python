@@ -15,7 +15,7 @@
 # lista.sort(reverse=True)
 # sorted(lista)
 lista = [
-    {'nome': 'Louis', 'sobrenome': 'milton'},
+    {'nome': 'Louis', 'sobrenome': 'milford'},
     {'nome': 'Mary', 'sobrenome': 'Olsen'},
     {'nome': 'Daniel', 'sobrenome': 'Silversford'},
     {'nome': 'Edward', 'sobrenome': 'Moncton'},
