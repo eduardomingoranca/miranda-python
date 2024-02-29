@@ -19,3 +19,13 @@
 # Linux e Mac: source venv/bin/activate
 # Desativar: deactivate
 #
+# pip - instalando pacotes e bibliotecas
+# Instalar ultima versao:
+# pip install nome_pacote
+# Instalar versao precisa
+# (tem outras formas tambem nao mencionadas)
+# pip install nome_pacote==0.0.0
+# Desinstalar pacote
+# pip uninstall nome_pacote
+# Congelar (ver pacotes)
+# pip freeze
