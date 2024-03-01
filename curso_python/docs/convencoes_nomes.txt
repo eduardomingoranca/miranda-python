@@ -1,0 +1,10 @@
+Curiosidades sobre convencoes de nomes
+Como voce viu na aula anterior, usamos certas convencoes para nomes de variaveis, funcoes, classes e assim por diante. Essas convencoes tem um nome que podemos usar para nos referir ao modo como estamos nomeando determinados objetos em nosso programa: PascalCase, camelCase e snake_case.
+
+PascalCase - significa que todas as palavras iniciam com letra maiuscula e nada eh usado para separa-las, como em: MinhaClasse, Classe, MeuObjeto, MeuProgramaMuitoLegal. Essa a convencao utilizada para classes em Python;
+
+camelCase - a unica diferenca de camelCase para PascalCase eh a primeira letra. Em camelCase a primeira letra sempre sera minuscula e o restante das palavras devera iniciar com letra maiuscula. Como em: minhaFuncao, funcaoDeSoma, etc... Essa conversao nao eh usada em Python (apesar de eu confundir as duas e às vezes acabar chamando camelCase de PascalCase ou vice-versa, mas agora voce sabe a diferenca);
+
+snake_case - este eh o padrao usado em Python para definir qualquer coisa que nao for uma classe. Todas as letras serao minusculas e separadas por um underline, como em: minha_variavel, funcao_legal, soma.
+
+Os padroes usados em Python sao: snake_case para qualquer coisa e PascalCase para classes.
