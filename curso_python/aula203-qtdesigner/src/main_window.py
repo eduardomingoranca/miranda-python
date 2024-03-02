@@ -22,7 +22,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
     def eventFilter(self, watched: QObject, event: QEvent) -> bool:
         if event.type() == QEvent.Type.KeyPress:
-            # Tenho certeza que o tipo é KeyPress
+            # Tenho certeza que o tipo eh KeyPress
             event = cast(QKeyEvent, event)
             text = self.lineName.text()
             self.labelResult.setText(text + event.text())
