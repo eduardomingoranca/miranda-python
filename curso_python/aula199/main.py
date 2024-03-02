@@ -1,4 +1,4 @@
-# openpyxl - criando uma planilha do Excel (Workbook e Worksheet)
+# openpyxl - manipulando as planilhas do Workbook
 # Com essa biblioteca sera possivel ler e escrever dados em celulas
 # especificas, formatar celulas, inserir graficos,
 # criar formulas, adicionar imagens e outros elementos graficos as suas
@@ -16,9 +16,19 @@ ROOT_FOLDER = Path(__file__).parent
 WORKBOOK_PATH = ROOT_FOLDER / 'workbook.xlsx'
 
 workbook = Workbook()
-worksheet: Worksheet = workbook.active
+# worksheet: Worksheet = workbook.active
 
-# Criando os cabeçalhos
+# Nome para a planilha
+sheet_name = 'Minha planilha'
+# Criamos a planilha
+workbook.create_sheet(sheet_name, 0)
+# Selecionou a planilha
+worksheet: Worksheet = workbook[sheet_name]
+
+# Remover uma planilha
+workbook.remove(workbook['Sheet'])
+
+# Criando os cabecalhos
 worksheet.cell(1, 1, 'Nome')
 worksheet.cell(1, 2, 'Idade')
 worksheet.cell(1, 3, 'Nota')
