@@ -52,26 +52,26 @@ class MyWidget(QWidget, Ui_myWidget):
         worker = self._worker1
         thread = self._thread1
 
-        # Worker é movido para a thread. Todas as funções e métodos do
-        # objeto de worker serão executados na thread criado pela QThread.
+        # Worker e movido para a thread. Todas as funções e metodos do
+        # objeto de worker serao executados na thread criado pela QThread.
         worker.moveToThread(thread)
 
-        # Quando uma QThread é iniciada, emite o sinal started automaticamente.
+        # Quando uma QThread e iniciada, emite o sinal started automaticamente.
         thread.started.connect(worker.doWork)  # type: ignore
 
-        # O sinal finished é emitido pelo objeto worker quando o trabalho que
-        # ele está executando é concluído. Isso aciona o método quit da qthread
+        # O sinal finished e emitido pelo objeto worker quando o trabalho que
+        # ele está executando e concluído. Isso aciona o metodo quit da qthread
         # que interrompe o loop de eventos dela.
         worker.finished.connect(thread.quit)
 
-        # deleteLater solicita a exclusão do objeto worker do sistema de
+        # deleteLater solicita a exclusao do objeto worker do sistema de
         # gerenciamento de memória do Python. Quando o worker finaliza, ele
-        # emite um sinal finished que vai executar o método deleteLater.
+        # emite um sinal finished que vai executar o metodo deleteLater.
         # Isso garante que objetos sejam removidos da memória corretamente.
         thread.finished.connect(thread.deleteLater)  # type: ignore
         worker.finished.connect(worker.deleteLater)
 
-        # Aqui estão seus métodos e início, meio e fim
+        # Aqui estao seus metodos e início, meio e fim
         # execute o que quiser
         worker.started.connect(self.worker1Started)
         worker.progressed.connect(self.worker1Progressed)
@@ -102,27 +102,27 @@ class MyWidget(QWidget, Ui_myWidget):
         worker = self._worker2
         thread = self._thread2
 
-        # Worker é movido para a thread. Todas as funções e métodos do
-        # objeto de worker serão executados na thread criado pela QThread.
+        # Worker e movido para a thread. Todas as funções e metodos do
+        # objeto de worker serao executados na thread criado pela QThread.
         worker.moveToThread(thread)
 
-        # Quando uma QThread é iniciada, emite o sinal started automaticamente.
-        # Nome do método "doWork" modificado para "executeMe" (p/ exemplo)
+        # Quando uma QThread e iniciada, emite o sinal started automaticamente.
+        # Nome do metodo "doWork" modificado para "executeMe" (p/ exemplo)
         thread.started.connect(worker.executeMe)  # type: ignore
 
-        # O sinal finished é emitido pelo objeto worker quando o trabalho que
-        # ele está executando é concluído. Isso aciona o método quit da qthread
+        # O sinal finished e emitido pelo objeto worker quando o trabalho que
+        # ele está executando e concluído. Isso aciona o metodo quit da qthread
         # que interrompe o loop de eventos dela.
         worker.finished.connect(thread.quit)
 
-        # deleteLater solicita a exclusão do objeto worker do sistema de
+        # deleteLater solicita a exclusao do objeto worker do sistema de
         # gerenciamento de memória do Python. Quando o worker finaliza, ele
-        # emite um sinal finished que vai executar o método deleteLater.
+        # emite um sinal finished que vai executar o metodo deleteLater.
         # Isso garante que objetos sejam removidos da memória corretamente.
         thread.finished.connect(thread.deleteLater)  # type: ignore
         worker.finished.connect(worker.deleteLater)
 
-        # Aqui estão seus métodos e início, meio e fim
+        # Aqui estao seus metodos e início, meio e fim
         # execute o que quiser
         worker.started.connect(self.worker2Started)
         worker.progressed.connect(self.worker2Progressed)
