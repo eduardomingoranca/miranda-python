@@ -1,4 +1,4 @@
-# Exercício - Lista de tarefas com desfazer e refazer
+# Exercicio - Lista de tarefas com desfazer e refazer
 # Musica para codar =)
 # Everybody wants to rule the world - Tears for fears
 # todo = [] -> lista de tarefas

@@ -35,7 +35,7 @@ worksheet.cell(1, 3, 'Nota')
 
 students = [
     # nome      idade nota
-    ['João',    14,   5.5],
+    ['Joao',    14,   5.5],
     ['Maria',   13,   9.7],
     ['Luiz',    15,   8.8],
     ['Alberto', 16,   10],

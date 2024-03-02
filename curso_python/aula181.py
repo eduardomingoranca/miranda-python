@@ -1,13 +1,13 @@
 # random tem geradores de numeros pseudoaleatorios
 # Obs.: numeros pseudoaleatorios significa que os numeros
 # parecem ser aleatorios, mas na verdade nao sao. Portanto,
-# este modulo nao deve ser usado para segurança ou uso criptografico.
+# este modulo nao deve ser usado para seguranca ou uso criptografico.
 # O motivo disso eh que quando temos uma mesma entrada e um mesmo algoritimo,
 # a saida pode ser previsivel.
 # doc: https://docs.python.org/pt-br/3/library/random.html
 import random
 
-# Funções:
+# Funcoes:
 # seed
 #   -> Inicializa o gerador de random (por isso "numeros pseudoaleatorios")
 # random.seed(0)

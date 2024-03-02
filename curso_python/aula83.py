@@ -30,7 +30,7 @@ pessoas_completa = {**pessoa, **dados_pessoa}
 
 
 def mostro_argumentos_nomeados(*args, **kwargs):
-    print('NÃO NOMEADOS:', args)
+    print('NAO NOMEADOS:', args)
 
     for chave, valor in kwargs.items():
         print(chave, valor)

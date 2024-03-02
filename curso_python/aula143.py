@@ -3,7 +3,7 @@
 # @staticmethod e metodos normais como abstratos, para isso
 # use @abstractmethod como decorator mais interno.
 # Foo - Bar sao palavras usadas como placeholder
-# para palavras que podem mudar na programaçao.
+# para palavras que podem mudar na programacao.
 from abc import ABC, abstractmethod
 
 

@@ -10,16 +10,16 @@
 # __call__ da metaclass eh chamado com os argumentos e chama:
 #   __new__ da class com os argumentos (cria a instancia)
 #   __init__ da class com os argumentos
-# __call__ da metaclass termina a execuçao
+# __call__ da metaclass termina a execucao
 #
 # Metodos importantes da metaclass
 # __new__(mcs, name, bases, dct) (Cria a classe)
 # __call__(cls, *args, **kwargs) (Cria e inicializa a instancia)
 #
-# "Metaclasses sao magias mais profundas do que 99% dos usuários
+# "Metaclasses sao magias mais profundas do que 99% dos usuarios
 # deveriam se preocupar. Se voce quer saber se precisa delas,
 # nao precisa (as pessoas que realmente precisam delas sabem
-# com certeza que precisam delas e nao precisam de uma explicaçao
+# com certeza que precisam delas e nao precisam de uma explicacao
 # sobre o porque)."
 # — Tim Peters (CPython Core Developer)
 def meu_repr(self):

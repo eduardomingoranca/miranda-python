@@ -12,7 +12,7 @@ def criar_funcao(func):
             e_string(arg)
         resultado = func(*args, **kwargs)
         print(f'O seu resultado foi {resultado}.')
-        print('Ok, agora você foi decorada')
+        print('Ok, agora voce foi decorada')
         return resultado
     return interna
 
