@@ -11,7 +11,7 @@
 # Louis Octavius,32,"Av Brasil, 21, Centro"
 # John Smith,55,"Rua 22, 44, Nova Era"
 # A primeira linha do arquivo define os nomes das colunas da, enquanto as
-# linhas seguintes contêm os valores das linhas, separados por virgulas.
+# linhas seguintes contem os valores das linhas, separados por virgulas.
 # Regras simples do CSV
 # 1 - Separe os valores das colunas com um delimitador unico (,)
 # 2 - Cada registro deve estar em uma linha

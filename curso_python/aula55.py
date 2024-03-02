@@ -1,5 +1,5 @@
 """
-Imprecisão de ponto flutuante
+Imprecisao de ponto flutuante
 Double-precision floating-point format IEEE 754
 https://en.wikipedia.org/wiki/Double-precision_floating-point_format
 https://docs.python.org/pt-br/3/tutorial/floatingpoint.html

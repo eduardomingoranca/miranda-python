@@ -6,7 +6,7 @@
 # - Qual o nome e numero do dia de determinada data (ex.: weekday)
 # - Criar um calendario em si (ex.: monthcalendar)
 # - Trabalhar com coisas especificas de calendarios (ex.: calendar, month)
-# Por padrão dia da semana começa em 0 ateh 6
+# Por padrao dia da semana comeca em 0 ateh 6
 # 0 = segunda-feira | 6 = domingo
 import calendar
 

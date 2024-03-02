@@ -1,7 +1,7 @@
 # @property - um getter no modo Pythonico
 # getter - um metodo para obter um atributo
 # cor -> get_cor()
-# modo pythônico - modo do Python de fazer coisas
+# modo pythonico - modo do Python de fazer coisas
 # @property eh uma propriedade do objeto, ela
 # eh um metodo que se comporta como um
 # atributo 🤯 🤯 🤯

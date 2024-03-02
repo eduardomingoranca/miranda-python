@@ -20,7 +20,7 @@
 #
 # Python 3 usa C3 superclass linearization
 # para gerar o mro.
-# Você não precisa estudar isso (eh complexo)
+# Voce nao precisa estudar isso (eh complexo)
 # https://en.wikipedia.org/wiki/C3_linearization
 #
 # Para saber a ordem de chamada dos metodos

@@ -28,15 +28,9 @@ if __name__ == '__main__':
     display = Display()
     window.addWidgetToVLayout(display)
 
-    # Grid  
-    buttonsGrid = ButtonsGrid(display, info)
+    # Grid
+    buttonsGrid = ButtonsGrid(display, info, window)
     window.vLayout.addLayout(buttonsGrid)
-
-    button = Button('Texto do botao')
-    window.addToVLayout(button)
-
-    button2 = Button('Texto do botao')
-    window.addToVLayout(button2)
 
     # Executa tudo
     window.adjustFixedSize()

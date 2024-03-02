@@ -36,7 +36,7 @@ while True:
 
     if palavra_formada == palavra_secreta:
         os.system('cls')
-        print('VOCÊ GANHOU!! PARABENS!')
+        print('VOCE GANHOU!! PARABENS!')
         print('A palavra era %s' % (palavra_secreta))
         print('Tentativas: %d' % (numero_tentativas))
         letras_acertadas = ''
